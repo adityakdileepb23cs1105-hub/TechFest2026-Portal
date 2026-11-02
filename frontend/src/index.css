@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* The two theme classes that App.jsx switches between */
+.light { background: #f5f7fa; color: #1a1a1a; min-height: 100vh; }
+.dark  { background: #121212; color: #f5f5f5; min-height: 100vh; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #2b2d42;
+  color: white;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-links a { color: white; margin-right: 16px; text-decoration: none; }
+.nav-links a:hover { text-decoration: underline; }
+
+.badge {
+  display: inline-block;
+  min-width: 20px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: #ef233c;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.page { padding: 24px; max-width: 900px; margin: 0 auto; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.filters input { flex: 1 1 200px; padding: 8px; }
+.filters select { padding: 8px; }
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+button { padding: 8px 14px; margin-right: 6px; cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+button.secondary { background: transparent; border: 1px solid currentColor; color: inherit; }
+
+.error-msg { color: #d90429; }
+.dark .error-msg { color: #ff6b81; }
+
+form label { display: block; margin-top: 12px; }
+form input { width: 100%; padding: 8px; }
+form button { margin-top: 16px; }
+
+.cart-list { list-style: none; padding: 0; }
+.cart-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+.gallery-grid img { width: 100%; border-radius: 8px; }
