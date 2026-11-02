@@ -66,6 +66,3 @@ describe("Experiment 5 - Security & API Automated Test Suite", () => {
     expect(res.statusCode).toBe(404);
   });
 });
-
-  // Intentional broken test for CI demonstration
-  test('Intentional broken test for CI verification', () => { expect(1 + 1).toBe(3); });
